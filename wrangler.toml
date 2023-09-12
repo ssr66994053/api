@@ -13,6 +13,9 @@ compatibility_date = "2023-09-04"
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+kv_namespaces = [
+  { binding = "kv", preview_id = "aa464ae24bb3475896a034148ab084db", id = "e431afe6a38c484181a33b6f64c4b7be" }
+]
 
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
 # Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/

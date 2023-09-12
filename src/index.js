@@ -7,9 +7,15 @@
  *
  * Learn more at https://developers.cloudflare.com/workers/
  */
+ import kvRouter from './kv';
 
 export default {
 	async fetch(request, env, ctx) {
+		const url = new URL(request.url);
+		if (url.pathname.startsWith('/api/kv')) {
+			return kvRouter.handle(request);
+		}
+
 		return new Response('Hello World!');
 	},
 };
