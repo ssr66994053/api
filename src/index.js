@@ -12,8 +12,8 @@
 export default {
 	async fetch(request, env, ctx) {
 		const url = new URL(request.url);
-		if (url.pathname.startsWith('/api/kv')) {
-			return kvRouter.handle(request);
+		if (url.pathname.startsWith('/kv')) {
+			return kvRouter.handle(request, env);
 		}
 
 		return new Response('Hello World!');
