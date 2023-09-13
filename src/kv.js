@@ -1,11 +1,11 @@
 import { createCors, error, json, Router } from 'itty-router';
 
 const { preflight, corsify } = createCors({
-    headers: {
-        'Access-Control-Allow-Credentials': 'true',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': '*',
-        'Access-Control-Allow-Methods': 'GET,PATCH,POST,DELETE,OPTIONS',
+  headers: {
+    'Access-Control-Allow-Credentials': 'true',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': '*',
+    'Access-Control-Allow-Methods': 'GET,PATCH,POST,DELETE,OPTIONS',
     },
 })
 
